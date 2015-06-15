@@ -19,7 +19,6 @@ You will optimize a provided website with a number of optimization- and performa
 var elem = document.createElement('img')
 ```
   * Second Stage Optimization: reducing the scripting time by using `document.getElementByClassName()` instead of `document.querySelectorAll()`, which is the slowest way to access DOM; reducing layout time by `transform: translateX()`
-
   * Third Stage Optimization: reducing painting time by adding the following code to`views\css\style.css`
 ```
 .randomPizzaContainer {
