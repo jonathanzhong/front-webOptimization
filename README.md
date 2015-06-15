@@ -31,6 +31,8 @@ You will optimize a provided website with a number of optimization- and performa
 ```
 
 ##Result:
+- Achieving 94/100 for mobile and 92/100 for laptop from pagespeed
 ![pageSpeed-mobile](pageSpeed-mobile0.png)
 ![pageSpeed-laptop](pageSpeed-laptop0.png)
+- Achieving 60FPS
 ![60fps](60fps.png)
