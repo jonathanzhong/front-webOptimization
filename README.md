@@ -33,6 +33,6 @@ var elem = document.createElement('img')
 ```
 
 ##Result:
-![](pageSpeed-mobile.png)
-![](pageSpeed-laptop.png)
-![](60fps.png)
+![pageSpeed-mobile](pageSpeed-mobile.png)
+![pageSpeed-laptop](pageSpeed-laptop.png)
+![60fps](60fps.png)
