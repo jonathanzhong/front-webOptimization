@@ -1,2 +1,1 @@
-# front-webOptimization
-Project4 - Web Optimizaiton
+# jonathanzhong.github.io
