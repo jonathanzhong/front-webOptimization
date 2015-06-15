@@ -15,9 +15,8 @@ You will optimize a provided website with a number of optimization- and performa
   * Minify JavaScript file, moving the script section to bottom of HTML
 - main.js
   * First stage optimization: move the below code outside the for loop
-```
-var elem = document.createElement('img')
-```
+`var elem = document.createElement('img')
+`
   * Second Stage Optimization: reducing the scripting time by using `document.getElementByClassName()` instead of `document.querySelectorAll()`, which is the slowest way to access DOM; reducing layout time by `transform: translateX()`
   * Third Stage Optimization: reducing painting time by adding the following code to`views\css\style.css`
 ```
