@@ -7,6 +7,11 @@
 
 Optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
 
+##Running Instruction:
+
+1. Go to Google PageSpeed Insights, input 'jonathanzhong.github.io', then you will get the analysis of the page.
+2. Scroll down to the protfolio page, click on the 'Yonglin's Pizzeria', you will be nagvigated to the pizza page, open the dev too to the console, you will get the rendering speed.
+
 
 ##Approaches to Optimization Web Performance:
 - index.html
