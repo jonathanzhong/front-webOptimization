@@ -455,7 +455,8 @@ var resizePizzas = function(size) {
     var pizzaArray = document.getElementsByClassName("randomPizzaContainer");
     var dx = determineDx(pizzaArray[0], size);
     var newwidth = (pizzaArray[0].offsetWidth + dx) + 'px';
-    for (var i = 0; i < pizzaArray.length; i++) {
+    //Submit-nitpick: for loop syntax change
+    for (var i = 0, len = pizzaArray.length; i < len; i++) {
       pizzaArray[i].style.width = newwidth;
     }
   }
@@ -510,9 +511,9 @@ function updatePositions() {
   var moveScroll = document.body.scrollTop / 1250;
   var phase;
   for (var i = 0; i < itemsLength; i++) {
-    phase = Math.sin(moveScroll + (i % 5));
-    //ToDO: Reducing layoutime by using CSS3 Hardware acceleration and get rid of the need to trigger a re-layout
-    items[i].style.transform = 'translateX(' + items[i].basicLeft + 100 * phase + 'px)';
+    phase = Math.sin(moveScroll + (i % 5)) * 100;
+    //ToDo: Reducing layoutime by using CSS3 Hardware acceleration and get rid of the need to trigger a re-layout
+    items[i].style.transform = 'translateX(' + phase + 'px)';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -533,17 +534,16 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  var elem = document.createElement('img');
+  var elem;
   for (var i = 0; i < 40; i++) {
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     elem.style.left = (i % cols) * s + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
-
+    document.getElementById("movingPizzas1").appendChild(elem);
   }
   updatePositions();
 });
