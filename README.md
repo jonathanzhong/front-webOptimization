@@ -1,6 +1,6 @@
 #Project4 - Web Optimization
 
-![](http://progressed.io/bar/90?title=Progress)
+![](http://progressed.io/bar/100?title=Progress)
 
 
 ##Project Objective:
